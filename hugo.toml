@@ -15,10 +15,10 @@ disableKinds = ["taxonomy", "term"]
 
   # Google Scholar metrics, shown on the home and publications pages.
   # Update all four together.
-  citations = "8,007"
-  hindex = "28"
-  i10index = "54"
-  metricsAsOf = "March 2026"
+  citations = "8,631"
+  hindex = "29"
+  i10index = "57"
+  metricsAsOf = "October 2026"
 
 [menu]
   [[menu.main]]
