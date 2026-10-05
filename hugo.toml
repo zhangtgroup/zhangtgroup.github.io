@@ -1,4 +1,4 @@
-baseURL = "https://tengzhang48.github.io/zhangtgroup.github.io/"
+baseURL = "https://zhangtgroup.github.io/"
 languageCode = "en-us"
 title = "Zhang Research Group"
 disableKinds = ["taxonomy", "term"]
@@ -12,6 +12,13 @@ disableKinds = ["taxonomy", "term"]
   scholar = "https://scholar.google.com/citations?user=sTvwiocAAAAJ"
   github = "https://github.com/tengzhang48"
   accent = "#3B4FBF"
+
+  # Google Scholar metrics, shown on the home and publications pages.
+  # Update all four together.
+  citations = "8,007"
+  hindex = "28"
+  i10index = "54"
+  metricsAsOf = "March 2026"
 
 [menu]
   [[menu.main]]
@@ -31,7 +38,7 @@ disableKinds = ["taxonomy", "term"]
     url = "/people/"
     weight = 4
   [[menu.main]]
-    name = "Teaching"
+    name = "Teaching & Outreach"
     url = "/teaching/"
     weight = 5
   [[menu.main]]

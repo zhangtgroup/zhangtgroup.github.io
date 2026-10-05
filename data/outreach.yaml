@@ -1,0 +1,11 @@
+# Outreach photos shown on the Teaching & Outreach page (newest first).
+# Images live in static/img/outreach/.
+items:
+  - image: "img/outreach/2022-lsamp-poster-francisco.jpg"
+    caption: "Francisco Flores presents his LSAMP summer research poster, August 2022. From left: Francisco, Guangchao Wan, Gabriel Alkuino, and Prof. Zhang."
+  - image: "img/outreach/2018-manlius-library-wrinkle-demo.jpg"
+    caption: "Group members run hands-on balloon-wrinkling demos for kids at Manlius Library, 2018."
+  - image: "img/outreach/2017-luke-poster-dean-dahlberg.jpg"
+    caption: "High school intern Luke Rath explains his poster to Dean Teresa A. Dahlberg, 2017."
+  - image: "img/outreach/2017-halle-poster-mccausland.jpg"
+    caption: "High school intern Halle Bristol presents her poster to Tom and Linda McCausland, whose generosity supports the high school intern program."

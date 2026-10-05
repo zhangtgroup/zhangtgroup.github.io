@@ -7,7 +7,7 @@
     <!-- PI -->
     <h2>Principal Investigator</h2>
     <div style="display:flex; gap:28px; align-items:flex-start; margin-bottom:40px;">
-      <div class="avatar" style="width:96px;height:96px;font-size:24px;flex-shrink:0;">TZ</div>
+      <div class="avatar" style="width:120px;height:120px;font-size:24px;flex-shrink:0;margin:0;"><img src="{{ "img/people/teng-zhang.jpg" | relURL }}" alt="Teng Zhang"></div>
       <div>
         <div style="font-size:18px;font-weight:500;margin-bottom:4px;">Teng Zhang</div>
         <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;">Associate Professor, Mechanical and Aerospace Engineering</div>
@@ -17,7 +17,7 @@
           He did his Ph.D. at Brown University with Huajian Gao, and was a postdoctoral fellow at MIT before joining Syracuse in 2016.
         </p>
         <div style="display:flex;gap:12px;margin-top:14px;">
-          <a href="{{ "files/CV_TengZhang.pdf" | relURL }}" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">CV</a>
+          {{ if fileExists "static/files/CV_TengZhang.pdf" }}<a href="{{ "files/CV_TengZhang.pdf" | relURL }}" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">CV</a>{{ end }}
           <a href="https://scholar.google.com/citations?user=sTvwiocAAAAJ" target="_blank" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">Google Scholar</a>
           <a href="mailto:tzhang48@syr.edu" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">Email</a>
         </div>
@@ -31,7 +31,7 @@
       {{ if ne .name "Teng Zhang" }}
       <div class="person-card">
         <div class="avatar">
-          {{ if .photo }}<img src="{{ .photo }}" alt="{{ .name }}">{{ else }}{{ .initials }}{{ end }}
+          {{ if .photo }}<img src="{{ .photo | relURL }}" alt="{{ .name }}">{{ else }}{{ .initials }}{{ end }}
         </div>
         <div class="person-name">{{ .name }}</div>
         <div class="person-role">{{ .role }}</div>

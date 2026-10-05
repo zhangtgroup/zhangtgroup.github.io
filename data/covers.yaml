@@ -1,0 +1,19 @@
+# Journal covers featuring the group's work (newest first).
+# Images live in static/img/covers/.
+items:
+  - journal: "Nature"
+    date: "February 2023"
+    title: "Autonomous self-burying seed carriers for aerial seeding"
+    image: "img/covers/2023-nature-seed-carriers.jpg"
+  - journal: "Science Advances"
+    date: "May 2021"
+    title: "Morphing pasta and beyond"
+    image: "img/covers/2021-science-advances-morphing-pasta.jpg"
+  - journal: "Soft Matter"
+    date: "April 2021"
+    title: "Magttice: a lattice model for hard-magnetic soft materials"
+    image: "img/covers/2021-soft-matter-magttice.jpg"
+  - journal: "Soft Matter"
+    date: "May 2020"
+    title: "Geometry underlies the mechanical stiffening and softening of an indented floating film"
+    image: "img/covers/2020-soft-matter-floating-film.jpg"

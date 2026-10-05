@@ -1,4 +1,7 @@
 items:
+  - date: "Jul 2026"
+    type: "Defense"
+    text: "Gabriel Alkuino successfully defends his PhD thesis. Congratulations, Dr. Alkuino!"
   - date: "May 2026"
     type: "Welcome"
     text: "Guillaume Gilles Lostec joins the group as postdoctoral researcher."

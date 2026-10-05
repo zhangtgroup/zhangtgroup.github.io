@@ -37,10 +37,22 @@ Edit `data/publications.yaml` — add a new entry under the correct year section
 Edit `data/people.yaml`:
 - Add to `current:` for current members
 - Move to `alumni:` when they leave
-- To add a photo: place the image in `static/img/` and set `photo: "/img/yourname.jpg"`
+- To add a photo: place a square image (about 400×400) in `static/img/people/` and set `photo: "img/people/yourname.jpg"`
 
 ### Update featured publications on home page
 Edit `data/featured_pubs.yaml`.
+
+### Journal covers and outreach photos
+- Covers on the home page: `data/covers.yaml`, images in `static/img/covers/`
+- Outreach photos on the Teaching & Outreach page: `data/outreach.yaml`, images in `static/img/outreach/`
+
+### Figures on content pages
+Put the image in `static/img/research/` and add it to a Markdown page with:
+`{{< fig src="img/research/name.jpg" alt="..." caption="..." >}}`
+
+### Google Scholar numbers and CV
+- Citation counts live in `hugo.toml` under `[params]` (update all four together).
+- The CV button on the People page appears automatically once `static/files/CV_TengZhang.pdf` exists.
 
 ## Local preview (optional)
 

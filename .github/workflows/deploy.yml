@@ -26,8 +26,14 @@ jobs:
         with:
           hugo-version: "0.121.0"
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # Use the address GitHub Pages actually serves from, so the site works
+      # whether the repo lives under tengzhang48 or the zhangtgroup organization.
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

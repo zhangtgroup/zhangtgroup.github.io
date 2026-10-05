@@ -4,6 +4,7 @@
 <div class="container">
   <div class="hero">
     <div class="hero-left">
+     <div class="hero-text">
       <div class="hero-tag">{{ .Site.Params.department }}</div>
       <h1>{{ .Site.Params.tagline }}</h1>
       <p class="hero-sub">Prof. Teng Zhang · Syracuse University</p>
@@ -12,11 +13,16 @@
         <a href="{{ "/research/" | relURL }}" class="btn btn-primary">Our research →</a>
         <a href="{{ "/publications/" | relURL }}" class="btn btn-secondary">Publications</a>
       </div>
+     </div>
+      <figure class="hero-media">
+        <img src="{{ "img/research/wrinkling-on-torus.png" | relURL }}" alt="Simulated wrinkling pattern on a torus: hexagonal dimples on the outer surface give way to stripes near the inner edge" width="900" height="499">
+        <figcaption>Wrinkling patterns on a torus · <em>Soft Matter</em> (2019)</figcaption>
+      </figure>
     </div>
     <div class="hero-sidebar">
       <div class="sidebar-label">Recent news</div>
       <ul class="news-list">
-        {{ range .Site.Data.news.items }}
+        {{ range first 5 .Site.Data.news.items }}
         <li class="news-item">
           <div class="news-date">{{ .date }}</div>
           <div class="news-text"><span class="badge">{{ .type }}</span>{{ .text | safeHTML }}</div>
@@ -24,7 +30,7 @@
         {{ end }}
       </ul>
       <div class="sidebar-footer">
-        8,007 citations · h-index 28 ·
+        {{ .Site.Params.citations }} citations · h-index {{ .Site.Params.hindex }} ·
         <a href="{{ .Site.Params.scholar }}" target="_blank">Google Scholar →</a>
       </div>
     </div>
@@ -40,34 +46,37 @@
     </div>
     <div class="card-grid">
       <a href="{{ "/research/#morphing" | relURL }}" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M2 8 Q5 2 8 8 Q11 14 14 8" stroke="#3B4FBF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
+        <div class="card-media"><img src="{{ "img/research/morphing-pasta.jpg" | relURL }}" alt="Flat pasta morphing into 3D shapes as it cooks in water" loading="lazy"></div>
         <h3>Morphing structures &amp; reconfigurable systems</h3>
         <p>Programmable shape change through bistability, elastic instabilities, and magneto-mechanical actuation.</p>
       </a>
       <a href="{{ "/research/#interfaces" | relURL }}" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M2 10 Q8 4 14 10" stroke="#3B4FBF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <line x1="2" y1="10" x2="14" y2="10" stroke="#3B4FBF" stroke-width="0.75" stroke-dasharray="2 2"/>
-          </svg>
-        </div>
+        <div class="card-media card-media--contain"><img src="{{ "img/research/rod-droplet-wrapping.jpg" | relURL }}" alt="Simulation of an elastic rod wrapping around a liquid droplet" loading="lazy"></div>
         <h3>Interfaces &amp; soft matter</h3>
         <p>Elasto-capillary coupling, adhesion, and hygro-mechanical interactions in soft and bio-hybrid systems.</p>
       </a>
       <a href="{{ "/research/#biological" | relURL }}" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="8" cy="5" r="3" stroke="#3B4FBF" stroke-width="1.5"/>
-            <path d="M4 13 Q4 9 8 9 Q12 9 12 13" stroke="#3B4FBF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
+        <div class="card-media"><img src="{{ "img/research/seed-carrier-sim-vs-experiment.jpg" | relURL }}" alt="Erodium-inspired seed carriers drilling into soil, compared with simulations" loading="lazy"></div>
         <h3>Biological systems &amp; bioinspired mechanics</h3>
         <p>Mechanics models of living systems — somite formation, biofilm control — and bioinspired engineering design.</p>
       </a>
+    </div>
+  </div>
+</div>
+
+<!-- JOURNAL COVERS -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">On the cover</h2>
+    </div>
+    <div class="cover-grid">
+      {{ range .Site.Data.covers.items }}
+      <figure class="cover">
+        <img src="{{ .image | relURL }}" alt="{{ .journal }} cover, {{ .date }}: {{ .title }}" loading="lazy" width="427" height="560">
+        <figcaption><span class="cover-journal">{{ .journal }}</span> · {{ .date }}</figcaption>
+      </figure>
+      {{ end }}
     </div>
   </div>
 </div>
@@ -77,7 +86,7 @@
   <div class="section">
     <div class="section-header">
       <h2 class="section-title">Selected publications</h2>
-      <a href="{{ "/publications/" | relURL }}" class="section-link">All 73 papers →</a>
+      <a href="{{ "/publications/" | relURL }}" class="section-link">All {{ partial "paper-count.html" . }} papers →</a>
     </div>
     <div class="pub-list">
       {{ range .Site.Data.featured_pubs.items }}
@@ -105,7 +114,7 @@
       {{ range .Site.Data.people.current }}
       <div class="person-card">
         <div class="avatar">
-          {{ if .photo }}<img src="{{ .photo }}" alt="{{ .name }}">{{ else }}{{ .initials }}{{ end }}
+          {{ if .photo }}<img src="{{ .photo | relURL }}" alt="{{ .name }}">{{ else }}{{ .initials }}{{ end }}
         </div>
         <div class="person-name">{{ .name }}</div>
         <div class="person-role">{{ .role }}</div>

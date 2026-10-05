@@ -4,6 +4,9 @@ title: "News"
 
 # News
 
+## July 2026
+Gabriel Alkuino successfully defends his PhD thesis. Congratulations, Dr. Alkuino!
+
 ## May 2026
 Guillaume Gilles Lostec joins the group as a postdoctoral researcher.
 

@@ -1,0 +1,9 @@
+{{/* Renders data/outreach.yaml as a photo grid. */}}
+<div class="gallery">
+  {{ range site.Data.outreach.items }}
+  <figure class="gallery-item">
+    <img src="{{ .image | relURL }}" alt="{{ .caption }}" loading="lazy">
+    <figcaption>{{ .caption }}</figcaption>
+  </figure>
+  {{ end }}
+</div>

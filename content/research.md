@@ -16,6 +16,8 @@ We extended this to magnetic systems. A magnet embedded in a soft structure chan
 
 The Erodium seed drills itself into soil by unwinding a helical stalk. We built mechanics models of this process and used them to design a three-tailed wood-based seed carrier that outperforms the natural version across many soil types. A flat pasta groove story follows the same logic: the right groove geometry makes flat dough curl into a specific 3D shape when cooked.
 
+{{< fig src="img/research/morphing-pasta.jpg" alt="Flat pasta morphing into 3D shapes as it cooks in water" caption="Grooved flat pasta morphs into 3D shapes as it cooks. *Science Advances* cover (2021)." width="420" >}}
+
 Key papers: *Nature* (2023) · *JMPS* (2024) · *Device* (2026) · *JAM* (2026)
 
 ---
@@ -26,6 +28,8 @@ How a surface sticks, releases, and interacts with liquids depends on its geomet
 
 These problems connect to real applications: coatings that resist bacterial growth, soft robots that grip and release objects, and bio-hybrid devices that work in wet environments.
 
+{{< fig src="img/research/rod-droplet-wrapping-sequence.jpg" alt="Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds" caption="An elastic rod wraps around a liquid droplet (0 to 1.33 s), simulated with a coupled lattice–particle model." width="560" >}}
+
 Key papers: *Advanced Functional Materials* (2023) · *Physical Review Fluids* (2025)
 
 ---
@@ -35,6 +39,8 @@ Key papers: *Advanced Functional Materials* (2023) · *Physical Review Fluids* (
 Some of our work takes biology as the starting point for engineering design. Some takes biology as the subject itself.
 
 On the engineering side: the Erodium seed, millipede locomotion, and the Venus flytrap have all shaped how we think about morphing and actuation. These organisms solved hard mechanical problems over millions of years. We try to extract the principles and put them to work.
+
+{{< fig src="img/research/seed-carrier-sim-vs-experiment.jpg" alt="Erodium-inspired seed carriers drilling into soil, with matching simulations below" caption="Erodium-inspired seed carriers drilling into soil over 75 minutes (top) and the corresponding simulations (bottom). *Nature* (2023)." >}}
 
 On the science side: we are building mechanics models of somite formation — the process by which the vertebral column segments during embryonic development. The biochemistry of this process is fairly well understood, but the role of mechanical forces is not. We work closely with stem cell biologists on this. It is a new direction for our group, and one we find genuinely exciting.
 

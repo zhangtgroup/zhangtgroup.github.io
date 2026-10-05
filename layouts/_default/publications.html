@@ -8,7 +8,7 @@
 </p>
 <p style="font-size:13px;color:var(--text-tertiary);margin-bottom:32px;">
 <a href="https://scholar.google.com/citations?user=sTvwiocAAAAJ" target="_blank">Google Scholar</a>
-&nbsp;·&nbsp; 8,007 citations &nbsp;·&nbsp; h-index 28 &nbsp;·&nbsp; i10-index 54 (as of March 2026)
+&nbsp;·&nbsp; {{ .Site.Params.citations }} citations &nbsp;·&nbsp; h-index {{ .Site.Params.hindex }} &nbsp;·&nbsp; i10-index {{ .Site.Params.i10index }} (as of {{ .Site.Params.metricsAsOf }})
 </p>
 
 {{ range .Site.Data.publications.years }}
@@ -16,7 +16,6 @@
 <div class="pub-list" style="margin-bottom:8px;">
   {{ range .papers }}
   <div class="pub-item">
-    <div class="pub-year">{{ $.Page.Site.Data.publications | len }}</div>
     <div class="pub-body">
       <div class="pub-title">
         {{ .title }}

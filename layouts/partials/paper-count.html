@@ -1,0 +1,3 @@
+{{- $n := 0 -}}
+{{- range site.Data.publications.years -}}{{- $n = add $n (len .papers) -}}{{- end -}}
+{{- return $n -}}
