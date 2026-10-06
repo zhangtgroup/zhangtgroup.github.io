@@ -1,0 +1,9 @@
+{{/* Two images side by side with one caption.
+     Usage: {{< fig2 src1="..." alt1="..." src2="..." alt2="..." caption="..." >}} */}}
+<figure class="fig fig2">
+  <div class="fig2-row">
+    <img src="{{ .Get "src1" | relURL }}" alt="{{ .Get "alt1" }}" loading="lazy">
+    <img src="{{ .Get "src2" | relURL }}" alt="{{ .Get "alt2" }}" loading="lazy">
+  </div>
+  {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

@@ -1,0 +1,5 @@
+{{/* One news entry from data/news.yaml. Paper items link to their DOI. */}}
+<article class="news-entry">
+  <div class="news-meta"><time>{{ .date }}</time><span class="badge">{{ .type }}</span></div>
+  <p class="news-body">{{ .text | safeHTML }}{{ with .link }} <a href="{{ . }}" class="news-link" target="_blank" rel="noopener">Read the paper →</a>{{ end }}</p>
+</article>

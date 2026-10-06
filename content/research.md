@@ -1,5 +1,6 @@
 ---
 title: "Research"
+layout: "research"
 ---
 
 # Research
@@ -20,7 +21,7 @@ The Erodium seed drills itself into soil by unwinding a helical stalk. We built 
 
 {{< fig src="img/research/morphing-pasta.jpg" alt="Flat pasta morphing into 3D shapes as it cooks in water" caption="Grooved flat pasta morphs into 3D shapes as it cooks. *Science Advances* cover (2021)." width="420" >}}
 
-Key papers: *Nature* (2023) · *JMPS* (2024) · *Device* (2026) · *JAM* (2026)
+{{< keypapers >}}*Nature* (2023) · *JMPS* (2024) · *Device* (2026) · *JAM* (2026){{< /keypapers >}}
 
 ---
 
@@ -32,7 +33,7 @@ These problems connect to real applications: coatings that resist bacterial grow
 
 {{< fig src="img/research/rod-droplet-wrapping-sequence.jpg" alt="Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds" caption="An elastic rod wraps around a liquid droplet (0 to 1.33 s), simulated with a coupled lattice–particle model." width="760" >}}
 
-Key papers: *Advanced Functional Materials* (2023) · *Physical Review Fluids* (2025)
+{{< keypapers >}}*Advanced Functional Materials* (2023) · *Physical Review Fluids* (2025){{< /keypapers >}}
 
 ---
 
@@ -48,7 +49,7 @@ On the science side: we are building mechanics models of somite formation — th
 
 A third thread, in collaboration with Syracuse and ETH Zürich, uses magnetically driven surface topographies to fight bacterial biofilms on medical implants. A related project contributed to a soft robotic trunk, inspired by an elephant's, that helped a stroke patient open a cabinet and retrieve items from a refrigerator.
 
-Key papers: *Nature Communications* (2026) · *Advanced Functional Materials* (2025) · NSF CMMI (2025–2028)
+{{< keypapers >}}*Nature Communications* (2026) · *Advanced Functional Materials* (2025) · NSF CMMI (2025–2028){{< /keypapers >}}
 
 ---
 
@@ -72,3 +73,5 @@ Each item below links to public code and records, so the claims can be checked r
 - **Nonlinear analysis with an explicit claims record.** Two 2026 manuscripts, one under review on [period doubling and quadrupling of wrinkles](https://github.com/tengzhang48/nonlinear-symplectic-wrinkle-bifurcations) and one under revision on [constrained crack-tip fields in a Mooney–Rivlin sheet](https://github.com/tengzhang48/nonlinear-symplectic-mooney-rivlin-crack-tip), were carried out as human–AI collaborations. Their companion repositories ship claims ledgers, verification tests and figure-generation records, and the wrinkle study publishes its [process and lessons](https://github.com/tengzhang48/nonlinear-symplectic-wrinkle-bifurcations/blob/main/PROCESS_AND_LESSONS.md), wrong turns included.
 - **Code generation with layered verification.** [abaqus_ufl](https://github.com/tengzhang48/abaqus_ufl), described in [*Extreme Mechanics Letters* (2026)](https://doi.org/10.1016/j.eml.2026.102530), turns constitutive-model and element declarations written in Python into inspectable Abaqus UMAT/UEL Fortran, and checks the generated code against independent references, with [public benchmark results](https://tengzhang48.github.io/abaqus_ufl/#livebench). A [case study](https://github.com/tengzhang48/ai-mechanics-resources/blob/main/case_studies/abaqus_ufl.md) records how AI systems contributed to its development.
 - **A worked simulation example.** In a [public example](https://github.com/tengzhang48/CoupFE-EDA/tree/main/examples/stacked_memory_package) developed with an AI coding agent (credited in its commit history) on the [CoupFE](https://github.com/tengzhang48/CoupFE) finite-element scaffold, a synthetic 90-body electronic package goes from CAD to heat conduction and thermoelastic warpage. A separately written FEniCSx implementation, sharing only the mesh and the declared model, reproduces every reported field to within 5 × 10⁻¹⁰ relative difference, against tolerances fixed before the comparison ([comparison record](https://github.com/tengzhang48/CoupFE-EDA/blob/main/examples/stacked_memory_package/fenicsx_verification/COMPARISON.md)). This verifies the implementation for that declared model; it does not validate the model against a physical package.
+
+{{< fig2 src1="img/research/package-heat-warpage.png" alt1="Two package designs on one mesh: peak die temperature 76.2 versus 60.5 degrees Celsius, and substrate warpage 3.91 versus 1.90 micrometres" src2="img/research/package-fenicsx-verification.png" alt2="Histograms of the difference between CoupFE and an independent FEniCSx solve for temperature, displacement and von Mises stress, all far below the predeclared 1e-5 tolerance, and a stress parity plot on the diagonal" caption="The worked example. Left: two thermal-interface materials compared on one mesh, giving peak die temperatures of 76.2 and 60.5 °C and substrate warpage of 3.91 and 1.90 µm. Right: the independent check, with every CoupFE–FEniCSx difference far below the predeclared 10⁻⁵ tolerance (dashed lines). Figures from the [public example](https://github.com/tengzhang48/CoupFE-EDA/tree/main/examples/stacked_memory_package)." >}}

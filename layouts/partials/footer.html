@@ -1,10 +1,15 @@
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-left">© {{ now.Year }} Zhang Research Group · Syracuse University</div>
-    <div class="footer-links">
-      <a href="{{ .Site.Params.scholar }}" target="_blank">Google Scholar</a>
-      <a href="{{ .Site.Params.github }}" target="_blank">GitHub</a>
-      <a href="mailto:{{ .Site.Params.email }}">Contact</a>
+    <div class="footer-id">
+      <div class="footer-name"><span>Zhang</span> Research Group</div>
+      <address>Department of Mechanical &amp; Aerospace Engineering<br>Syracuse University · Syracuse, NY 13244</address>
     </div>
+    <nav class="footer-links" aria-label="Elsewhere">
+      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      <a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ "/openings/" | relURL }}">Openings</a>
+    </nav>
   </div>
+  <div class="footer-base">© {{ now.Year }} Zhang Research Group · Syracuse University</div>
 </footer>

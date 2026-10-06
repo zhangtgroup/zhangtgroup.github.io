@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container">
+  <div class="with-toc">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+    <aside class="toc" aria-label="On this page">
+      <div class="toc-label">On this page</div>
+      {{ .TableOfContents }}
+    </aside>
+  </div>
+</div>
+{{ end }}

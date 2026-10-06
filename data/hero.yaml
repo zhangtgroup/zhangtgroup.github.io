@@ -1,0 +1,38 @@
+# Home-page hero slideshow. The first slide is what most visitors see; put the
+# strongest image first. Keep 3-4 slides. Every caption should point to evidence
+# (a paper DOI or the section of the site that documents the work).
+#   bg:  frame colour behind the image (match the image's own background)
+#   fit: "contain" shows the whole image; "cover" fills the frame and crops
+slides:
+  - theme: "Morphing structures"
+    image: "img/research/wrinkling-on-torus.png"
+    alt: "Simulated wrinkling pattern on a torus: hexagonal dimples on the outer surface give way to stripes near the inner edge"
+    caption: "Wrinkles on a torus form hexagons, stripes and hybrids, controlled by non-uniform curvature."
+    source: "<em>Soft Matter</em> (2019)"
+    link: "https://doi.org/10.1039/c9sm00235a"
+    bg: "#ffffff"
+    fit: "contain"
+  - theme: "Interfaces & soft matter"
+    image: "img/research/rod-droplet-wrapping-sequence.jpg"
+    alt: "Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds"
+    caption: "An elastic rod wraps around a liquid droplet, simulated with a coupled lattice–particle model."
+    source: "Research"
+    link: "/research/#interfaces"
+    bg: "#ffffff"
+    fit: "contain"
+  - theme: "Biological & bioinspired mechanics"
+    image: "img/research/seed-carrier-trio.jpg"
+    alt: "Three-tailed Erodium-inspired seed carrier drilling into soil over 75 minutes (top) and the matching simulation (bottom)"
+    caption: "Erodium-inspired seed carriers drill into soil: experiments (top) and simulations (bottom)."
+    source: "<em>Nature</em> (2023)"
+    link: "https://doi.org/10.1038/s41586-022-05656-3"
+    bg: "#000000"
+    fit: "contain"
+  - theme: "AI-enabled workflows"
+    image: "img/research/package-heat-warpage.png"
+    alt: "Two package designs on one mesh: peak die temperature 76.2 versus 60.5 degrees Celsius, and substrate warpage 3.91 versus 1.90 micrometres"
+    caption: "A worked example developed with an AI coding agent, checked against an independently written solver."
+    source: "Research"
+    link: "/research/#ai-workflows"
+    bg: "#ffffff"
+    fit: "contain"

@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   <link rel="icon" href="{{ "img/favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="theme-color" content="#ffffff">
+  {{- $title := cond .IsHome "Zhang Research Group" (printf "%s — Zhang Research Group" .Title) }}
+  {{- $desc := cond .IsHome .Site.Params.description (printf "%s — Zhang Research Group, Syracuse University" .Title) }}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zhang Research Group">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "img/research/wrinkling-on-torus.png" | absURL }}">
+  <meta property="og:image:alt" content="Simulated wrinkling pattern on a torus">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 

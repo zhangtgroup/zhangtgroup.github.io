@@ -13,12 +13,12 @@
 
 {{ range .Site.Data.publications.years }}
 <h2 class="pub-year-header">{{ .year }}</h2>
-<div class="pub-list" style="margin-bottom:8px;">
+<div class="pub-list pub-list--plain">
   {{ range .papers }}
   <div class="pub-item">
     <div class="pub-body">
       <div class="pub-title">
-        {{ .title }}
+        {{ if .doi }}<a href="https://doi.org/{{ .doi }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
         {{ if .tag }}<span class="pub-tag">{{ .tag }}</span>{{ end }}
       </div>
       <div class="pub-authors">{{ .authors | safeHTML }}</div>

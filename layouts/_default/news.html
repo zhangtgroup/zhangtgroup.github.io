@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container">
+  <div class="page-content">
+    <h1>News</h1>
+    <div class="news-timeline">
+      {{ range .Site.Data.news.items }}
+      {{ partial "news-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

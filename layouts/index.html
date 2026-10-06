@@ -1,41 +1,30 @@
 {{ define "main" }}
 
 <!-- HERO -->
-<div class="container">
-  <div class="hero">
-    <div class="hero-left">
-     <div class="hero-text">
-      <div class="hero-tag">{{ .Site.Params.department }}</div>
-      <h1>{{ .Site.Params.tagline }}</h1>
-      <p class="hero-sub">Prof. Teng Zhang · Syracuse University</p>
-      <p class="hero-desc">{{ .Site.Params.heroDesc }}</p>
-      <div class="hero-btns">
-        <a href="{{ "/research/" | relURL }}" class="btn btn-primary">Our research →</a>
-        <a href="{{ "/publications/" | relURL }}" class="btn btn-secondary">Publications</a>
+<section class="hero-band">
+  <div class="container">
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-tag">{{ .Site.Params.department }}</div>
+        <h1>{{ .Site.Params.tagline }}</h1>
+        <p class="hero-sub"><a href="{{ "/people/" | relURL }}">Prof. Teng Zhang</a> · Syracuse University</p>
+        <p class="hero-desc">{{ .Site.Params.heroDesc }}</p>
+        <div class="hero-btns">
+          <a href="{{ "/research/" | relURL }}" class="btn btn-primary">Our research →</a>
+          <a href="{{ "/publications/" | relURL }}" class="btn btn-secondary">Publications</a>
+          <a href="{{ "/openings/" | relURL }}" class="btn btn-secondary">Join us</a>
+        </div>
+        <p class="hero-metrics">
+          {{ partial "paper-count.html" . }} papers · {{ .Site.Params.citations }} citations · h-index {{ .Site.Params.hindex }}
+          <a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener">Google Scholar →</a>
+        </p>
       </div>
-     </div>
-      <figure class="hero-media">
-        <img src="{{ "img/research/wrinkling-on-torus.png" | relURL }}" alt="Simulated wrinkling pattern on a torus: hexagonal dimples on the outer surface give way to stripes near the inner edge" width="900" height="499">
-        <figcaption>Wrinkling patterns on a torus · <em>Soft Matter</em> (2019)</figcaption>
-      </figure>
-    </div>
-    <div class="hero-sidebar">
-      <div class="sidebar-label">Recent news</div>
-      <ul class="news-list">
-        {{ range first 5 .Site.Data.news.items }}
-        <li class="news-item">
-          <div class="news-date">{{ .date }}</div>
-          <div class="news-text"><span class="badge">{{ .type }}</span>{{ .text | safeHTML }}</div>
-        </li>
-        {{ end }}
-      </ul>
-      <div class="sidebar-footer">
-        {{ .Site.Params.citations }} citations · h-index {{ .Site.Params.hindex }} ·
-        <a href="{{ .Site.Params.scholar }}" target="_blank">Google Scholar →</a>
+      <div class="hero-media">
+        {{ partial "hero-rotator.html" . }}
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- RESEARCH THEMES -->
 <div class="container">
@@ -46,7 +35,7 @@
     </div>
     <div class="card-grid">
       <a href="{{ "/research/#morphing" | relURL }}" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-media"><img src="{{ "img/research/morphing-pasta.jpg" | relURL }}" alt="Flat pasta morphing into 3D shapes as it cooks in water" loading="lazy"></div>
+        <div class="card-media card-media--pasta"><img src="{{ "img/research/morphing-pasta.jpg" | relURL }}" alt="Flat pasta morphing into 3D shapes as it cooks in water" loading="lazy"></div>
         <h3>Morphing structures &amp; reconfigurable systems</h3>
         <p>Programmable shape change through bistability, elastic instabilities, and magneto-mechanical actuation.</p>
       </a>
@@ -68,6 +57,21 @@
       <h3>AI-enabled mechanics workflows</h3>
       <p>Across these research areas, we study how AI agents can assist computational mechanics — from setting up models and writing code to running simulations and checking results. Our focus is on workflows that make the evidence, assumptions, and verification visible to researchers rather than treating AI output as the final answer.</p>
       <a href="{{ "/research/#ai-workflows" | relURL }}" class="section-link">Explore this work →</a>
+    </div>
+  </div>
+</div>
+
+<!-- NEWS -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">News</h2>
+      <a href="{{ "/news/" | relURL }}" class="section-link">All news →</a>
+    </div>
+    <div class="news-grid">
+      {{ range first 4 .Site.Data.news.items }}
+      {{ partial "news-item.html" . }}
+      {{ end }}
     </div>
   </div>
 </div>
@@ -96,12 +100,12 @@
       <h2 class="section-title">Selected publications</h2>
       <a href="{{ "/publications/" | relURL }}" class="section-link">All {{ partial "paper-count.html" . }} papers →</a>
     </div>
-    <div class="pub-list">
+    <div class="pub-list pub-list--plain">
       {{ range .Site.Data.featured_pubs.items }}
       <div class="pub-item">
         <div class="pub-year">{{ .year }}</div>
         <div class="pub-body">
-          <div class="pub-title">{{ .title }}{{ if .tag }}<span class="pub-tag">{{ .tag }}</span>{{ end }}</div>
+          <div class="pub-title">{{ if .doi }}<a href="https://doi.org/{{ .doi }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}{{ if .tag }}<span class="pub-tag">{{ .tag }}</span>{{ end }}</div>
           <div class="pub-authors">{{ .authors }}</div>
           <div class="pub-journal">{{ .journal }}</div>
         </div>
@@ -128,8 +132,10 @@
         <div class="person-role">{{ .role }}</div>
       </div>
       {{ end }}
+      {{ partial "join-card.html" . }}
     </div>
   </div>
 </div>
 
+<script src="{{ "js/hero-rotator.js" | relURL }}" defer></script>
 {{ end }}
