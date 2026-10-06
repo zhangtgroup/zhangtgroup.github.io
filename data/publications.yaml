@@ -1,6 +1,10 @@
 years:
   - year: "2026"
     papers:
+      - title: "Making coupled-field Abaqus user elements simple"
+        authors: "<strong>T. Zhang</strong>†"
+        journal: "Extreme Mechanics Letters"
+        details: "89, 102530"
       - title: "Magnetic coupling transforms random snapping into ordered sequences in soft metamaterials"
         authors: "H. Sun, <u>G. Alkuino</u>, Y. Chi, Y. Zabila, H. Qing, D. Makarov, <strong>T. Zhang</strong>, and J. Yin"
         journal: "Science Advances"
