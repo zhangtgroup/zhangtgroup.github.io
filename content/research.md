@@ -17,7 +17,7 @@ Many structures in nature can snap between shapes, hold a position without power
 
 We extended this to magnetic systems. A magnet embedded in a soft structure changes how it deforms. We built simulation tools that capture this coupling efficiently, and used them to design ribbon arrays that flip between multiple shapes under a remote magnetic field — with no wires, no motors, and no continuous power. One application is programmable liquid manipulation for diagnostics.
 
-The Erodium seed drills itself into soil by unwinding a helical stalk. We built mechanics models of this process and used them to design a three-tailed wood-based seed carrier that outperforms the natural version across many soil types. A flat pasta groove story follows the same logic: the right groove geometry makes flat dough curl into a specific 3D shape when cooked.
+The Erodium seed drills itself into soil by unwinding a helical stalk. We built mechanics models of this process and used them to design a three-tailed seed carrier made from wood veneer; on flat ground it drills in 80% of the time, where natural Erodium seeds fail. A flat pasta groove story follows the same logic: the right groove geometry makes flat dough curl into a specific 3D shape when cooked.
 
 {{< fig src="img/research/morphing-pasta.jpg" alt="Flat pasta morphing into 3D shapes as it cooks in water" caption="Grooved flat pasta morphs into 3D shapes as it cooks. *Science Advances* cover (2021)." width="420" >}}
 
@@ -41,13 +41,13 @@ These problems connect to real applications: coatings that resist bacterial grow
 
 Some of our work takes biology as the starting point for engineering design. Some takes biology as the subject itself.
 
-On the engineering side: the Erodium seed, millipede locomotion, and the Venus flytrap have all shaped how we think about morphing and actuation. These organisms solved hard mechanical problems over millions of years. We try to extract the principles and put them to work.
+On the engineering side, natural systems such as the Erodium seed have shaped how we think about morphing and actuation. They solved hard mechanical problems over millions of years; we try to extract the principles and put them to work.
 
 {{< fig src="img/research/seed-carrier-sim-vs-experiment.jpg" alt="Erodium-inspired seed carriers drilling into soil, with matching simulations below" caption="Erodium-inspired seed carriers drilling into soil over 75 minutes (top) and the corresponding simulations (bottom). *Nature* (2023)." >}}
 
 On the science side: we are building mechanics models of somite formation — the process by which the vertebral column segments during embryonic development. The biochemistry of this process is fairly well understood, but the role of mechanical forces is not. We work closely with stem cell biologists on this. It is a new direction for our group, and one we find genuinely exciting.
 
-A third thread, in collaboration with Syracuse and ETH Zürich, uses magnetically driven surface topographies to fight bacterial biofilms on medical implants. A related project contributed to a soft robotic trunk, inspired by an elephant's, that helped a stroke patient open a cabinet and retrieve items from a refrigerator.
+A third thread uses magnetically driven surface topographies to fight bacterial biofilms on medical implants. A related project contributed to a soft robotic trunk, inspired by an elephant's, that helped a stroke patient open a cabinet and retrieve items from a refrigerator.
 
 {{< keypapers >}}*Nature Communications* (2026) · *Advanced Functional Materials* (2025) · NSF CMMI (2025–2028){{< /keypapers >}}
 
@@ -66,3 +66,7 @@ We are developing open tools for these workflows, including the [CoupFE](https:/
 {{< fig src="img/research/package-heat-warpage.png" alt="Two package designs on one mesh: peak die temperature 76.2 versus 60.5 degrees Celsius, and substrate warpage 3.91 versus 1.90 micrometres" caption="Example: a 90-body electronic package, from CAD to heat and warpage, developed with an AI coding agent. A separately written FEniCSx solver reproduces every field to within 5 × 10⁻¹⁰ relative difference ([public example and comparison record](https://github.com/tengzhang48/CoupFE-EDA/tree/main/examples/stacked_memory_package))." width="640" >}}
 
 {{< keypapers label="Open code" >}}[ai-mechanics-resources](https://github.com/tengzhang48/ai-mechanics-resources) · [CoupFE](https://github.com/tengzhang48/CoupFE) · [abaqus_ufl](https://github.com/tengzhang48/abaqus_ufl) · [CoupFE-EDA](https://github.com/tengzhang48/CoupFE-EDA){{< /keypapers >}}
+
+---
+
+{{< keypapers label="Funding" >}}National Science Foundation: CAREER Award [1847149](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1847149) (mechanics of interfaces in soft materials) · [2020476](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2020476) (multistable structures) · [2428643](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2428643) (bioinspired seeding) · [2517722](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2517722) (tissue boundary formation){{< /keypapers >}}
