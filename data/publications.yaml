@@ -216,6 +216,11 @@ years:
         journal: "Soft Matter"
         details: "17 (13), 3560–3568"
         doi: "10.1039/d0sm01662d"
+      - title: "Tailoring the multistability of origami-inspired, buckled magnetic structures via compression and creasing"
+        authors: "Y. Li, S. Avis, <strong>T. Zhang</strong>†, H. Kusumaatmaja†, and X. Wang†"
+        journal: "Materials Horizons"
+        details: "8 (12), 3324–3333"
+        doi: "10.1039/d1mh01152a"
 
   - year: "2020"
     papers:
@@ -267,6 +272,11 @@ years:
         journal: "eLife"
         details: "8, e45019"
         doi: "10.7554/eLife.45019"
+      - title: "Topological design of graphene"
+        authors: "B. Ni, <strong>T. Zhang</strong>, J. Li, X. Li, and H. Gao"
+        journal: "Handbook of Graphene, Vol. 2 (book chapter)"
+        details: "1–44"
+        doi: "10.1002/9781119468455.ch19"
 
   - year: "2018"
     papers:
@@ -279,6 +289,11 @@ years:
         journal: "Physical Review X"
         details: "8 (4), 041053"
         doi: "10.1103/PhysRevX.8.041053"
+      - title: "Phase field crystal modeling of grain boundary structures and growth in polycrystalline graphene"
+        authors: "J. Li, B. Ni, <strong>T. Zhang</strong>, and H. Gao"
+        journal: "Journal of the Mechanics and Physics of Solids"
+        details: "120, 36–48"
+        doi: "10.1016/j.jmps.2017.12.013"
 
   - year: "2017"
     papers:
@@ -302,6 +317,11 @@ years:
         journal: "Journal of Applied Mechanics"
         details: "84 (7), 071002"
         doi: "10.1115/1.4036613"
+      - title: "Harnessing the hygroscopic and biofluorescent behaviors of genetically tractable microbial cells to design biohybrid wearables"
+        authors: "W. Wang, L. Yao, C. Cheng, <strong>T. Zhang</strong>, H. Atsumi, L. Wang, G. Wang, O. Anilionyte, H. Steiner, J. Ou, K. Zhou, C. Wawrousek, K. Petrecca, A. Belcher, R. Karnik, X. Zhao, D. Wang, and H. Ishii"
+        journal: "Science Advances"
+        details: "3 (5), e1601984"
+        doi: "10.1126/sciadv.1601984"
 
   - year: "2016"
     papers:
@@ -408,3 +428,17 @@ years:
         details: "28 (5), 2753–2760"
         doi: "10.1021/la203934z"
 
+  - year: "2011"
+    papers:
+      - title: "Symplectic method for energy bands and surface states of 1D periodic structure with defects"
+        authors: "Q. Gao, <strong>T. Zhang</strong>, and W. Zhong"
+        journal: "Chinese Journal of Solid Mechanics"
+        details: "32 (4), 372–381 (in Chinese)"
+
+  - year: "2010"
+    papers:
+      - title: "A study on the bending stiffness of single-walled carbon nanotubes and related issues"
+        authors: "X. Guo and <strong>T. Zhang</strong>"
+        journal: "Journal of the Mechanics and Physics of Solids"
+        details: "58 (3), 428–443"
+        doi: "10.1016/j.jmps.2009.11.001"
