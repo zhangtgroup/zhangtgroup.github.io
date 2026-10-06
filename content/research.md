@@ -4,7 +4,9 @@ title: "Research"
 
 # Research
 
-We use mechanics as an enabling tool — drawing on biological observation, building theoretical and computational models, and translating those models into engineered systems. The three threads below describe our current work. They are connected: many projects cross more than one thread.
+We use mechanics as an enabling tool — drawing on biological observation, building theoretical and computational models, and translating those models into engineered systems. The three scientific themes below describe our current work. They are connected: many projects cross more than one theme.
+
+Running across all three is a methodological effort on [AI-enabled mechanics workflows](#ai-workflows): how AI agents can take on more of the computational work while the evidence and verification stay visible to researchers.
 
 ---
 
@@ -28,7 +30,7 @@ How a surface sticks, releases, and interacts with liquids depends on its geomet
 
 These problems connect to real applications: coatings that resist bacterial growth, soft robots that grip and release objects, and bio-hybrid devices that work in wet environments.
 
-{{< fig src="img/research/rod-droplet-wrapping-sequence.jpg" alt="Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds" caption="An elastic rod wraps around a liquid droplet (0 to 1.33 s), simulated with a coupled lattice–particle model." width="560" >}}
+{{< fig src="img/research/rod-droplet-wrapping-sequence.jpg" alt="Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds" caption="An elastic rod wraps around a liquid droplet (0 to 1.33 s), simulated with a coupled lattice–particle model." width="760" >}}
 
 Key papers: *Advanced Functional Materials* (2023) · *Physical Review Fluids* (2025)
 
@@ -47,3 +49,17 @@ On the science side: we are building mechanics models of somite formation — th
 A third thread, in collaboration with Syracuse and ETH Zürich, uses magnetically driven surface topographies to fight bacterial biofilms on medical implants. A related project contributed to a soft robotic trunk, inspired by an elephant's, that helped a stroke patient open a cabinet and retrieve items from a refrigerator.
 
 Key papers: *Nature Communications* (2026) · *Advanced Functional Materials* (2025) · NSF CMMI (2025–2028)
+
+---
+
+## AI-enabled mechanics workflows {#ai-workflows}
+
+{{< eyebrow >}}Across all three themes{{< /eyebrow >}}
+
+*AI can do more of the workflow. Verification determines how much we should trust it.*
+
+AI agents can increasingly write scientific code, operate simulation tools, and analyze results. But producing a plausible result is different from producing a trustworthy mechanics result. We study how AI can be integrated into computational mechanics while keeping the models, assumptions, numerical evidence, and verification accessible to researchers.
+
+Our work focuses on human-verifiable workflows. An AI agent may help formulate a model, implement it, run simulations, compare alternatives, or diagnose problems, while independent checks are used to test whether the result is mechanically and numerically sound. The goal is not to replace mechanics expertise, but to change where researchers spend their effort: less on routine implementation and more on modeling choices, verification, interpretation, and new scientific questions.
+
+We are developing open computational tools and benchmark problems to study these workflows in finite-element, multiphysics, and related simulations. A particular interest is making scientific software easier for both people and AI agents to use: clear interfaces, reproducible examples, traceable evidence, and verification built into the workflow.
