@@ -1,2 +1,3 @@
-{{/* Usage: {{< keypapers >}}*Nature* (2023) · *JMPS* (2024){{< /keypapers >}} */}}
-<p class="keypapers"><span class="keypapers-label">Key papers</span> {{ .Inner | markdownify }}</p>
+{{/* Usage: {{< keypapers >}}*Nature* (2023) · *JMPS* (2024){{< /keypapers >}}
+     Optional label: {{< keypapers label="Open code" >}}…{{< /keypapers >}} */}}
+<p class="keypapers"><span class="keypapers-label">{{ .Get "label" | default "Key papers" }}</span> {{ .Inner | markdownify }}</p>

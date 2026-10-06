@@ -4,7 +4,7 @@
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))">☰</button>
     <ul class="nav-links">
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
+      <li><a href="{{ .URL | relURL }}" {{ if or (eq $.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $.RelPermalink .URL)) }}class="active"{{ end }}>{{ .Name }}</a></li>
       {{ end }}
     </ul>
     <script>

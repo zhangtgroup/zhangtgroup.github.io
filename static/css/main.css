@@ -554,15 +554,6 @@ a:focus-visible, button:focus-visible {
   margin-bottom: 8px;
 }
 
-.fig2-row {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 20px;
-  align-items: center;
-}
-.fig2-row img { width: 100%; height: auto; }
-@media (max-width: 768px) { .fig2-row { grid-template-columns: 1fr; } }
-
 /* Outreach gallery */
 .gallery {
   display: grid;
