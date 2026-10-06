@@ -245,16 +245,9 @@ years:
         journal: "Extreme Mechanics Letters"
         details: "26, 40–45"
         doi: "10.1016/j.eml.2018.11.007"
-      - title: "Continuous wrinkling patterns on a curved surface"
-        authors: "<u>J. Chen</u> and <strong>T. Zhang</strong>†"
-        journal: "Journal of Applied Mechanics"
-        details: "86 (4), 041005"
 
   - year: "2018"
     papers:
-      - title: "Structured surfaces for engineering surface wettability"
-        authors: "<u>X. Zhang</u> and <strong>T. Zhang</strong>†"
-        journal: "Langmuir"
       - title: "Thermorph: democratizing 4D printing of self-folding materials and interfaces"
         authors: "Y. Tao, G. Wang, C. Lin, N. Lu, <u>X. Zhang</u>, <strong>T. Zhang</strong>, and L. Yao"
         journal: "Proceedings of ACM CHI"
@@ -378,11 +371,3 @@ years:
         details: "28 (5), 2753–2760"
         doi: "10.1021/la203934z"
 
-  - year: "2010"
-    papers:
-      - title: "Determination of material properties using nanoindentation and finite element analysis"
-        authors: "<strong>T. Zhang</strong>, H. Gao, T. Guo, N. O'Dowd, and K. Nikbin"
-        journal: "Chinese Journal of Theoretical and Applied Mechanics"
-      - title: "Study of plastic zone ahead of a crack tip"
-        authors: "<strong>T. Zhang</strong>"
-        journal: "Acta Mechanica Solida Sinica"
