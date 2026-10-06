@@ -249,10 +249,6 @@ years:
         authors: "<u>J. Chen</u> and <strong>T. Zhang</strong>†"
         journal: "Journal of Applied Mechanics"
         details: "86 (4), 041005"
-      - title: "Electromechanical phase transition in dielectric elastomers"
-        authors: "<strong>T. Zhang</strong>† and X. Zhao†"
-        journal: "Proceedings of the Royal Society A"
-        details: "475, 20180928"
 
   - year: "2018"
     papers:

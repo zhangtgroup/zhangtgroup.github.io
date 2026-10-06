@@ -7,7 +7,7 @@ layout: "research"
 
 We use mechanics as an enabling tool — drawing on biological observation, building theoretical and computational models, and translating those models into engineered systems. The three scientific themes below describe our current work. They are connected: many projects cross more than one theme.
 
-Running across all three is a methodological effort on [AI-enabled mechanics workflows](#ai-workflows): how AI agents can take on more of the computational work while the evidence and verification stay visible to researchers.
+Running across all three is a methodological effort on [human–AI research in mechanics](#human-ai): how AI agents can take on more of the computational work while the evidence and verification stay visible to researchers.
 
 ---
 
@@ -53,7 +53,7 @@ A third thread, in collaboration with Syracuse and ETH Zürich, uses magneticall
 
 ---
 
-## AI-enabled mechanics workflows {#ai-workflows}
+## Human–AI research in mechanics {#human-ai}
 
 {{< eyebrow >}}Across all three themes{{< /eyebrow >}}
 
