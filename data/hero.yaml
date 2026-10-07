@@ -5,11 +5,11 @@
 #   fit: "contain" shows the whole image; "cover" fills the frame and crops
 slides:
   - theme: "Morphing structures"
-    image: "img/research/wrinkling-on-torus.png"
-    alt: "Simulated wrinkling pattern on a torus: hexagonal dimples on the outer surface give way to stripes near the inner edge"
-    caption: "Wrinkles on a torus form hexagons, stripes and hybrids, controlled by non-uniform curvature."
-    source: "<em>Soft Matter</em> (2019)"
-    link: "https://doi.org/10.1039/c9sm00235a"
+    image: "img/research/droplet-ribbon-array.jpg"
+    alt: "Simulated water droplet held between the peaks of a magnetically switchable, multistable ribbon array on a substrate"
+    caption: "A water droplet on a magnetically reconfigurable multistable ribbon array, simulated by coupling many-body dissipative particle dynamics with a lattice model of the ribbons."
+    source: "<em>Device</em> (2026)"
+    link: "https://doi.org/10.1016/j.device.2025.100986"
     bg: "#ffffff"
     fit: "contain"
   - theme: "Interfaces & soft matter"
