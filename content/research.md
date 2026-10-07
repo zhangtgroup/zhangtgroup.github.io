@@ -17,9 +17,9 @@ Many structures in nature can snap between shapes, hold a position without power
 
 We extended this to magnetic systems. A magnet embedded in a soft structure changes how it deforms. We built simulation tools that capture this coupling efficiently, and used them to design ribbon arrays that flip between multiple shapes under a remote magnetic field — with no wires, no motors, and no continuous power. One application is programmable liquid manipulation for diagnostics.
 
-The Erodium seed drills itself into soil by unwinding a helical stalk. We built mechanics models of this process and used them to design a three-tailed seed carrier made from wood veneer; on flat ground it drills in 80% of the time, where natural Erodium seeds fail. A flat pasta groove story follows the same logic: the right groove geometry makes flat dough curl into a specific 3D shape when cooked.
+{{< fig class="fig-right" src="img/research/morphing-pasta.jpg" alt="Flat pasta morphing into 3D shapes as it cooks in water" caption="Grooved flat pasta morphs into 3D shapes as it cooks. *Science Advances* cover (2021)." >}}
 
-{{< fig src="img/research/morphing-pasta.jpg" alt="Flat pasta morphing into 3D shapes as it cooks in water" caption="Grooved flat pasta morphs into 3D shapes as it cooks. *Science Advances* cover (2021)." width="420" >}}
+The Erodium seed drills itself into soil by unwinding a helical stalk. We built mechanics models of this process and used them to design a three-tailed seed carrier made from wood veneer; on flat ground it drills in 80% of the time, where natural Erodium seeds fail. A flat pasta groove story follows the same logic: the right groove geometry makes flat dough curl into a specific 3D shape when cooked.
 
 {{< keypapers >}}*Nature* (2023) · *JMPS* (2024) · *Device* (2026) · *JAM* (2026){{< /keypapers >}}
 
@@ -31,7 +31,7 @@ How a surface sticks, releases, and interacts with liquids depends on its geomet
 
 These problems connect to real applications: coatings that resist bacterial growth, soft robots that grip and release objects, and bio-hybrid devices that work in wet environments.
 
-{{< fig src="img/research/rod-droplet-wrapping-sequence.jpg" alt="Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds" caption="An elastic rod wraps around a liquid droplet (0 to 1.33 s), simulated with a coupled lattice–particle model." width="760" >}}
+{{< fig src="img/research/rod-droplet-wrapping-sequence.jpg" alt="Time sequence of an elastic rod wrapping around a liquid droplet, from 0 to 1.33 seconds" caption="An elastic rod wraps around a liquid droplet (0 to 1.33 s), simulated with a coupled lattice–particle model." >}}
 
 {{< keypapers >}}*Advanced Functional Materials* (2023) · *Physical Review Fluids* (2025){{< /keypapers >}}
 
@@ -53,9 +53,9 @@ A third thread uses magnetically driven surface topographies to fight bacterial 
 
 ---
 
-## Human–AI research in mechanics {#human-ai}
-
 {{< eyebrow >}}Across all three themes{{< /eyebrow >}}
+
+## Human–AI research in mechanics {#human-ai}
 
 AI agents can now write scientific code, operate simulation tools, and analyze results. But a plausible result is not the same as a trustworthy mechanics result. We study how to bring AI into computational mechanics while keeping the models, assumptions, numerical evidence, and verification visible to researchers: AI can do more of the workflow, and verification determines how much we should trust it.
 
@@ -63,7 +63,7 @@ In this way of working, an agent helps formulate, implement, run, and diagnose a
 
 We are developing open tools for these workflows, including the [CoupFE](https://github.com/tengzhang48/CoupFE) finite-element scaffold and [abaqus_ufl](https://github.com/tengzhang48/abaqus_ufl), which generates inspectable Abaqus user subroutines and checks them against independent references.
 
-{{< fig src="img/research/package-heat-warpage.png" alt="Two package designs on one mesh: peak die temperature 76.2 versus 60.5 degrees Celsius, and substrate warpage 3.91 versus 1.90 micrometres" caption="Example: a 90-body electronic package, from CAD to heat and warpage, developed with an AI coding agent. A separately written FEniCSx solver reproduces every field to within 5 × 10⁻¹⁰ relative difference ([public example and comparison record](https://github.com/tengzhang48/CoupFE-EDA/tree/main/examples/stacked_memory_package))." width="640" >}}
+{{< fig src="img/research/package-heat-warpage.png" alt="Two package designs on one mesh: peak die temperature 76.2 versus 60.5 degrees Celsius, and substrate warpage 3.91 versus 1.90 micrometres" caption="Example: a 90-body electronic package, from CAD to heat and warpage, developed with an AI coding agent. A separately written FEniCSx solver reproduces every field to within 5 × 10⁻¹⁰ relative difference ([public example and comparison record](https://github.com/tengzhang48/CoupFE-EDA/tree/main/examples/stacked_memory_package))." >}}
 
 {{< keypapers label="Open code" >}}[ai-mechanics-resources](https://github.com/tengzhang48/ai-mechanics-resources) · [CoupFE](https://github.com/tengzhang48/CoupFE) · [abaqus_ufl](https://github.com/tengzhang48/abaqus_ufl) · [CoupFE-EDA](https://github.com/tengzhang48/CoupFE-EDA){{< /keypapers >}}
 

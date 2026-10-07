@@ -1,5 +1,6 @@
-{{/* Usage: {{< fig src="img/research/x.jpg" alt="..." caption="..." width="420" >}}  (width is an optional max width in px) */}}
-<figure class="fig"{{ with .Get "width" }} style="max-width:{{ . }}px"{{ end }}>
+{{/* Usage: {{< fig src="img/research/x.jpg" alt="..." caption="..." >}}
+     Optional: width="420" (max width in px), class="fig-right" (float beside the text) */}}
+<figure class="fig{{ with .Get "class" }} {{ . }}{{ end }}"{{ with .Get "width" }} style="max-width:{{ . }}px"{{ end }}>
   <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" }}" loading="lazy">
   {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>

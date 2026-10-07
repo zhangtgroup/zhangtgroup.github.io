@@ -575,28 +575,6 @@ a:focus-visible, button:focus-visible {
   color: var(--text-tertiary);
 }
 
-/* Research page sections */
-.research-section { margin-bottom: 48px; }
-.research-section h2 {
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  margin-bottom: 14px;
-  color: var(--text);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 10px;
-  margin-top: 40px;
-}
-.key-papers {
-  font-size: 13px;
-  color: var(--text-tertiary);
-  margin-top: 12px;
-  padding: 8px 12px;
-  background: var(--bg-secondary);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--accent-light);
-}
 
 /* Alumni table */
 .alumni-table {
@@ -681,6 +659,23 @@ a:focus-visible, button:focus-visible {
 
 /* ─── Research page: contents list and key papers ───────── */
 .with-toc { display: block; }
+/* Research page: one 760px column; text, rules and figures share its edges */
+.with-toc .page-content { max-width: 760px; }
+.with-toc .page-content h2 {
+  font-family: var(--font-serif);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+/* a divider (or label) already separates each section: no second rule under the heading */
+.with-toc hr + h2,
+.with-toc .eyebrow + h2 { border-bottom: 0; padding-bottom: 0; margin-top: 0; }
+.with-toc hr { clear: both; }
+.fig-right { float: right; width: 300px; margin: 6px 0 16px 32px; }
+@media (max-width: 640px) {
+  .fig-right { float: none; width: auto; margin: 24px 0 28px; }
+}
 .toc { display: none; }
 .keypapers {
   font-size: 14px !important;
@@ -695,11 +690,11 @@ a:focus-visible, button:focus-visible {
   color: var(--text-tertiary);
   margin-right: 8px;
 }
-@media (min-width: 1360px) {
+@media (min-width: 1120px) {
   .with-toc {
     display: grid;
-    grid-template-columns: minmax(0, 1050px) 200px;
-    gap: 64px;
+    grid-template-columns: minmax(0, 760px) 200px;
+    gap: 72px;
     align-items: start;
   }
   .toc {
