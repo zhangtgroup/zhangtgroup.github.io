@@ -1,18 +1,19 @@
 {{ define "main" }}
 <div class="container">
+<div class="with-toc">
 <div class="page-content">
 
 <h1>Publications</h1>
-<p style="font-size:13px;color:var(--text-tertiary);margin-bottom:8px;">
+<p class="pub-legend">
 † corresponding author &nbsp;·&nbsp; * equal contribution &nbsp;·&nbsp; <u>underlined</u> = supervised trainee (student or postdoc)
 </p>
-<p style="font-size:13px;color:var(--text-tertiary);margin-bottom:32px;">
-<a href="https://scholar.google.com/citations?user=sTvwiocAAAAJ" target="_blank">Google Scholar</a>
+<p class="pub-legend pub-legend--last">
+<a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener">Google Scholar</a>
 &nbsp;·&nbsp; {{ .Site.Params.citations }} citations &nbsp;·&nbsp; h-index {{ .Site.Params.hindex }} &nbsp;·&nbsp; i10-index {{ .Site.Params.i10index }} (as of {{ .Site.Params.metricsAsOf }})
 </p>
 
 {{ range .Site.Data.publications.years }}
-<h2 class="pub-year-header">{{ .year }}</h2>
+<h2 class="pub-year-header" id="y{{ .year }}">{{ .year }}</h2>
 <div class="pub-list pub-list--plain">
   {{ range .papers }}
   <div class="pub-item">
@@ -29,6 +30,13 @@
 </div>
 {{ end }}
 
+</div>
+<aside class="toc" aria-label="Jump to year">
+  <div class="toc-label">Jump to year</div>
+  <ul class="toc-years">
+    {{ range .Site.Data.publications.years }}<li><a href="#y{{ .year }}">{{ .year }}</a></li>{{ end }}
+  </ul>
+</aside>
 </div>
 </div>
 {{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+  <div class="page-content">
+    <h1>Page not found</h1>
+    <p>The page you were looking for isn't here. It may have moved when the group website was updated.</p>
+    <p>
+      <a href="{{ "/" | relURL }}">Home</a> &nbsp;·&nbsp;
+      <a href="{{ "/research/" | relURL }}">Research</a> &nbsp;·&nbsp;
+      <a href="{{ "/publications/" | relURL }}">Publications</a> &nbsp;·&nbsp;
+      <a href="{{ "/people/" | relURL }}">People</a> &nbsp;·&nbsp;
+      <a href="{{ "/openings/" | relURL }}">Openings</a>
+    </p>
+  </div>
+</div>
+{{ end }}

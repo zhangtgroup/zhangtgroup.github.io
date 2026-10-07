@@ -18,7 +18,9 @@
         </p>
         <div style="display:flex;gap:12px;margin-top:14px;">
           {{ if fileExists "static/files/CV_TengZhang.pdf" }}<a href="{{ "files/CV_TengZhang.pdf" | relURL }}" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">CV</a>{{ end }}
-          <a href="https://scholar.google.com/citations?user=sTvwiocAAAAJ" target="_blank" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">Google Scholar</a>
+          <a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">Google Scholar</a>
+          <a href="{{ .Site.Params.orcid }}" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">ORCID</a>
+          <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">GitHub</a>
           <a href="mailto:tzhang48@syr.edu" class="btn btn-secondary" style="font-size:12px;padding:5px 12px;">Email</a>
         </div>
       </div>

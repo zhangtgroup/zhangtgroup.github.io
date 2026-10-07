@@ -85,7 +85,9 @@
     <div class="cover-grid">
       {{ range .Site.Data.covers.items }}
       <figure class="cover">
-        <img src="{{ .image | relURL }}" alt="{{ .journal }} cover, {{ .date }}: {{ .title }}" loading="lazy" width="427" height="560">
+        <a href="https://doi.org/{{ .doi }}" target="_blank" rel="noopener" aria-label="{{ .title }} ({{ .journal }}, {{ .date }})">
+          <img src="{{ .image | relURL }}" alt="{{ .journal }} cover, {{ .date }}: {{ .title }}" loading="lazy" width="427" height="560">
+        </a>
         <figcaption><span class="cover-journal">{{ .journal }}</span> · {{ .date }}</figcaption>
       </figure>
       {{ end }}

@@ -69,4 +69,6 @@ We are developing open tools for these workflows, including the [CoupFE](https:/
 
 ---
 
+{{< anchor "funding" >}}
+
 {{< keypapers label="Funding" >}}National Science Foundation: CAREER Award [1847149](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1847149) (mechanics of interfaces in soft materials) · [2020476](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2020476) (multistable structures) · [2428643](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2428643) (bioinspired seeding) · [2517722](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2517722) (tissue boundary formation){{< /keypapers >}}
